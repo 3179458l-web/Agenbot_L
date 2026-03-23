@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "wifi_sta.c"
+        "wifi_provision.c"
+        "nvs_config.c"
+        "camera_init.c"
+        "http_server.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        esp_wifi
+        esp_netif
+        esp_http_server
+        esp_http_client
+        nvs_flash
+        esp_timer
+        json
+        mdns
+)
